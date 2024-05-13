@@ -1,0 +1,3 @@
+D:/Coding projects/Construction reports/cmake-build-debug/CMakeFiles/Construction_reports.dir
+D:/Coding projects/Construction reports/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Coding projects/Construction reports/cmake-build-debug/CMakeFiles/rebuild_cache.dir

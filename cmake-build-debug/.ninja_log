@@ -1,0 +1,13 @@
+# ninja log v5
+8	474	7373410163952949	CMakeFiles/Construction_reports.dir/House.cpp.obj	c99a81672c8cdc50
+21	586	7373410165069732	CMakeFiles/Construction_reports.dir/Temple.cpp.obj	38a9ff5a6ad93734
+2	590	7373410165099741	CMakeFiles/Construction_reports.dir/main.cpp.obj	6b66841758140c41
+708	1000	7373410169175039	Construction_reports.exe	f0a0556e8892b585
+12	626	7373410165474320	CMakeFiles/Construction_reports.dir/Contractor.cpp.obj	b213863f7944e76d
+17	708	7373410166302605	CMakeFiles/Construction_reports.dir/El_Paso.cpp.obj	757d7ec168d6c89a
+30	491	7373415881263502	CMakeFiles/Construction_reports.dir/Temple.cpp.obj	38a9ff5a6ad93734
+34	528	7373415881597621	CMakeFiles/Construction_reports.dir/College_Station.cpp.obj	32fbb1acc83927a8
+16	560	7373415881967211	CMakeFiles/Construction_reports.dir/main.cpp.obj	6b66841758140c41
+21	561	7373415881987203	CMakeFiles/Construction_reports.dir/Contractor.cpp.obj	b213863f7944e76d
+25	641	7373415882764115	CMakeFiles/Construction_reports.dir/El_Paso.cpp.obj	757d7ec168d6c89a
+641	764	7373415883984241	Construction_reports.exe	4fe7c66ab379334f
