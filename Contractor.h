@@ -11,20 +11,23 @@ class Contractor {
 
 private:
     string Name;
+    string owner;
     vector<House> Houses;
 
 public:
     Contractor();
 
+    void setOwner(string);
     void setName(string);
     void setHouse(House);
 
     friend ostream& operator<<(ostream& os, Contractor& contractor);
 
+    string getOwner();
     string getName();
 
 
-
+    Contractor(Contractor *pContractor);
 };
 
 

@@ -51,37 +51,37 @@ build cmake_object_order_depends_target_Construction_reports: phony || CMakeFile
 
 build CMakeFiles/Construction_reports.dir/main.cpp.obj: CXX_COMPILER__Construction_reports_unscanned_Debug D$:/Coding$ projects/Construction$ reports/main.cpp || cmake_object_order_depends_target_Construction_reports
   DEP_FILE = CMakeFiles\Construction_reports.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  FLAGS = -static-libgcc -static-libstdc++ -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   OBJECT_FILE_DIR = CMakeFiles\Construction_reports.dir
 
 build CMakeFiles/Construction_reports.dir/House.cpp.obj: CXX_COMPILER__Construction_reports_unscanned_Debug D$:/Coding$ projects/Construction$ reports/House.cpp || cmake_object_order_depends_target_Construction_reports
   DEP_FILE = CMakeFiles\Construction_reports.dir\House.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  FLAGS = -static-libgcc -static-libstdc++ -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   OBJECT_FILE_DIR = CMakeFiles\Construction_reports.dir
 
 build CMakeFiles/Construction_reports.dir/Contractor.cpp.obj: CXX_COMPILER__Construction_reports_unscanned_Debug D$:/Coding$ projects/Construction$ reports/Contractor.cpp || cmake_object_order_depends_target_Construction_reports
   DEP_FILE = CMakeFiles\Construction_reports.dir\Contractor.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  FLAGS = -static-libgcc -static-libstdc++ -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   OBJECT_FILE_DIR = CMakeFiles\Construction_reports.dir
 
 build CMakeFiles/Construction_reports.dir/El_Paso.cpp.obj: CXX_COMPILER__Construction_reports_unscanned_Debug D$:/Coding$ projects/Construction$ reports/El_Paso.cpp || cmake_object_order_depends_target_Construction_reports
   DEP_FILE = CMakeFiles\Construction_reports.dir\El_Paso.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  FLAGS = -static-libgcc -static-libstdc++ -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   OBJECT_FILE_DIR = CMakeFiles\Construction_reports.dir
 
 build CMakeFiles/Construction_reports.dir/Temple.cpp.obj: CXX_COMPILER__Construction_reports_unscanned_Debug D$:/Coding$ projects/Construction$ reports/Temple.cpp || cmake_object_order_depends_target_Construction_reports
   DEP_FILE = CMakeFiles\Construction_reports.dir\Temple.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  FLAGS = -static-libgcc -static-libstdc++ -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   OBJECT_FILE_DIR = CMakeFiles\Construction_reports.dir
 
 build CMakeFiles/Construction_reports.dir/College_Station.cpp.obj: CXX_COMPILER__Construction_reports_unscanned_Debug D$:/Coding$ projects/Construction$ reports/College_Station.cpp || cmake_object_order_depends_target_Construction_reports
   DEP_FILE = CMakeFiles\Construction_reports.dir\College_Station.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  FLAGS = -static-libgcc -static-libstdc++ -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   OBJECT_FILE_DIR = CMakeFiles\Construction_reports.dir
 
@@ -94,7 +94,7 @@ build CMakeFiles/Construction_reports.dir/College_Station.cpp.obj: CXX_COMPILER_
 # Link the executable Construction_reports.exe
 
 build Construction_reports.exe: CXX_EXECUTABLE_LINKER__Construction_reports_Debug CMakeFiles/Construction_reports.dir/main.cpp.obj CMakeFiles/Construction_reports.dir/House.cpp.obj CMakeFiles/Construction_reports.dir/Contractor.cpp.obj CMakeFiles/Construction_reports.dir/El_Paso.cpp.obj CMakeFiles/Construction_reports.dir/Temple.cpp.obj CMakeFiles/Construction_reports.dir/College_Station.cpp.obj
-  FLAGS = -g
+  FLAGS = -static-libgcc -static-libstdc++ -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Construction_reports.dir
   POST_BUILD = cd .

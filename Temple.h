@@ -2,7 +2,6 @@
 #define TEMPLE_H_INCLUDED
 
 #include "Contractor.h"
-#include "House.h"
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -15,7 +14,6 @@ class Temple {
 
 private:
     vector<Contractor> cNames;
-    bool newContractor;
 public:
 
 
@@ -26,8 +24,6 @@ public:
 
     int linearSearch(string key);
 
-
-    //test
 
 };
 

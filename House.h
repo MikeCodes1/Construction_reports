@@ -5,6 +5,7 @@
 
 using namespace std;
 
+class BADINDEX{};
 class House {
 
 private:

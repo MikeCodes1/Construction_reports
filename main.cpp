@@ -3,11 +3,9 @@
 #include "Temple.h"
 #include "El_Paso.h"
 #include "College_Station.h"
-#include <iomanip>
-#include <cctype>
+
 using namespace std;
 
-//const bool DEBUG = true;
 
 int main()
 {
@@ -19,7 +17,7 @@ int main()
     El_Paso EL_PASO;
     Temple Temple;
     CollegeStation CollegeStation;
-    bool ERROR1, ERROR2, RERUN;
+    bool ERROR1, ERROR2, RERUN, RVC = false;
     char c1;
     //Input
     do {
@@ -31,12 +29,12 @@ int main()
             do {
                 ERROR2 = false;
                 cout << "What City are you Inputting for?" << endl;
-                cout << "LIST:   EL PASO, Temple, College Station" << endl;
+                cout << "LIST:   El Paso, Temple, College Station" << endl;
                 cin.ignore();
                 getline(cin, NameOfProgram);
                 cout << endl;
 
-                if (NameOfProgram == "EL PASO") {
+                if (NameOfProgram == "El Paso") {
                     cout << "Inputting El Paso File" << endl << "Type EXIT to stop reading the information" << endl;
                     outFile.open("El_Paso.txt");
                     EL_PASO.setReadFile(outFile);
@@ -65,13 +63,13 @@ int main()
             do {
                 ERROR2 = false;
                 cout << "Choose from list of what reports you are doing " << endl;
-                cout << "LIST:  EL PASO, Temple, Bryan, College Station, Bell, Coryell, and McLennan" << endl;
+                cout << "LIST:  El Paso, Temple, Bryan, College Station, Bell, Coryell, and McLennan" << endl;
                 cin.ignore(); //This is the problem with the loop i realized that for some reason it is chopping off the first char of the NameOfProgram
                 // String which is causing the if statements to be wrong
                 getline(cin, NameOfProgram);
                 cout << NameOfProgram << endl;
                 //cout << endl;
-                if (NameOfProgram == "EL PASO") {
+                if (NameOfProgram == "El Paso") {
                     //The way to do this is dowload El Paso PDF and then convert it to a .txt in zamzar then copy and paste into program.
                     cout << "Reading El Paso File" << endl << endl;
                     inFile.open("El_Paso.txt");
@@ -83,12 +81,23 @@ int main()
                     //This program go to the Temple website and dowload as a hmtml or something like that which pops up as a google edge page then copy and paste
                     //from that and it should be in a vertical format
                     cout << "Residential type R or Commercial type C. ";
-                    cin >> c1;
                     cout << "Reading Temple File" << endl << endl;
                     inFile.open("Temple.txt");
-                    Temple.ReadFile(inFile, c1);
+                    do {
+                        cin >> c1;
+                        if(!inFile){
+                            cerr << "ERROR not in file" << endl;
+                        }
+                        try {
+                            Temple.ReadFile(inFile, c1);
+                            RVC = true;
+                        }
+                        catch (BADINDEX) {
+                            cout << "Error wrong input try again" << endl;
+                        }
+                    }while(!RVC);
                     inFile.close();
-                    //Temple.Display(cout);
+                    Temple.Display(cout);
                 }
                 else if (NameOfProgram == "College Station") {
                     cout << "Reading College Station File" << endl << endl;
@@ -112,10 +121,10 @@ int main()
         if (!ERROR1) {
             cout << "Do you want to run again? type YES or NO" << endl;
             cin >> reRun;
-            if (reRun == "YES") {
+            if (reRun == "YES" || reRun == "yes") {
                 RERUN = true;
             }
-            else if (reRun == "NO") {
+            else if (reRun == "NO" || reRun == "no") {
                 RERUN = false;
             }
         }
